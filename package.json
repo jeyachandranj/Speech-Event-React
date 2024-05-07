@@ -1,0 +1,47 @@
+{
+  "homepage": "https://jeyachandranj.github.io/speech/",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@swup/overlay-theme": "^1.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.8.1",
+    "react-router-hash-link": "^2.4.3",
+    "react-scroll": "^1.9.0",
+    "swup": "^3.0.4"
+  },
+  "scripts": {
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.2.2"
+  }
+}

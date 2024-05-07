@@ -1,0 +1,145 @@
+.singleEvent {
+  width: 100vw;
+  height: 120vh;
+  background: url(./backGround.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.singleEventCard {
+  width: 85vw;
+  height: 40vw;
+  margin-top: 10vh;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+  display: flex;
+  padding: 18px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col1 {
+  width: 49%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventPoster {
+  width: auto;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.col2 {
+  width: 49%;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 16px;
+  color: white;
+}
+
+.eventHeading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.rowcol {
+  display: flex;
+}
+
+.subheading {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.heading,
+.headingp {
+  font-size: 24px;
+  font-weight: 500;
+  background-image: linear-gradient(to bottom right, #3232ff, #09b9ff);
+  padding: 4px 12px 4px 12px;
+  border-radius: 4px;
+}
+.headingp {
+  background-image: linear-gradient(to bottom right, #ff00ee, #ff0932);
+}
+
+.content {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .singleEventCard {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    padding: 4px;
+  }
+
+  .col1 {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .eventPoster {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .col2 {
+    width: 100%;
+    padding: 8px 16px 16px 16px;
+  }
+
+  .eventHeading {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .subheading {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .heading {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .content {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+.soon {
+  color: #ff32ad;
+  font-size: 20px;
+}

@@ -1,0 +1,33 @@
+import Swup from '../Swup';
+import delegate from 'delegate-it';
+type HandlersEventMap = {
+    animationInDone: undefined;
+    animationInStart: undefined;
+    animationOutDone: undefined;
+    animationOutStart: undefined;
+    animationSkipped: undefined;
+    clickLink: delegate.Event<MouseEvent>;
+    contentReplaced: PopStateEvent | undefined;
+    disabled: undefined;
+    enabled: undefined;
+    openPageInNewTab: delegate.Event<MouseEvent>;
+    pageLoaded: undefined;
+    pageRetrievedFromCache: undefined;
+    pageView: PopStateEvent | undefined;
+    popState: PopStateEvent;
+    samePage: delegate.Event<MouseEvent>;
+    samePageWithHash: delegate.Event<MouseEvent>;
+    serverError: undefined;
+    transitionStart: PopStateEvent | undefined;
+    transitionEnd: PopStateEvent | undefined;
+    willReplaceContent: PopStateEvent | undefined;
+};
+type AvailableEventNames = keyof HandlersEventMap;
+export type Handler<T extends keyof HandlersEventMap> = (event: HandlersEventMap[T]) => void;
+export type Handlers = {
+    [Key in keyof HandlersEventMap]: Handler<Key>[];
+};
+export declare function on<TEventType extends AvailableEventNames>(this: Swup, event: TEventType, handler: Handler<TEventType>): void;
+export declare function off<TEventType extends AvailableEventNames>(this: Swup, event?: TEventType, handler?: Handler<TEventType>): void;
+export declare function triggerEvent<TEventType extends AvailableEventNames>(this: Swup, eventName: TEventType, originalEvent?: HandlersEventMap[TEventType]): void;
+export {};

@@ -1,0 +1,17 @@
+.leaderboard_section {
+  background: url(../assets/backGround.svg);
+  padding: 150px 50px;
+  width: 100vw;
+}
+.heading {
+  text-align: center;
+  font-size: 6vw;
+  color: #fff;
+  /* background-clip: text; */
+  /* background-image: linear-gradient(to bottom right, #ff00ee, #ff0932); */
+}
+.para {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}

@@ -1,0 +1,157 @@
+.footer {
+  background: linear-gradient(to right, #00093c, #191919);
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 60px;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  flex-wrap: wrap;
+}
+
+.footer_first {
+  width: 35%;
+  text-align: left;
+  padding: 20px 40px;
+}
+.footer_sambhav {
+  margin: 20px 0;
+  font-family: goodtimingbd;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+.footer_sambhav_description {
+  margin: 10px 0;
+  width: 80%;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+}
+.footer_second {
+  width: 50%;
+}
+
+.footer_page_link {
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.footer_page_link:hover {
+  color: grey;
+}
+
+.footer_menu_heading {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-family: goodtimingbd;
+  color: #ff5bc8;
+}
+
+.footer_third {
+  width: 29%;
+  text-align: left;
+}
+.footer_creator_div {
+  text-align: center;
+  color: white;
+}
+.footer_a_link {
+  color: #ff5bc8;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer_creator {
+  padding: 10px 0;
+  font-size: 20px;
+}
+.footer_contact {
+  display: flex;
+  margin-bottom: 10px;
+  margin: 20px 0;
+  align-items: center;
+  font-size: 16px;
+}
+
+.footer_contact_image {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  /* margin:10px; */
+}
+
+.footer_social_item {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.footer_social_link {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.footer_sambhav_image_div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.footer_sambhav_image {
+  height: 40px;
+}
+.footer_grabbit_image {
+  height: 50px;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  .footer_first {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer_sambhav_description {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer_second {
+    width: 80%;
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .footer_third {
+    width: 80%;
+  }
+  .footer_menu_heading {
+    text-align: center;
+    white-space: nowrap;
+  }
+  .footer_social_item {
+    justify-content: center;
+  }
+  .footer_creator_div {
+    padding: 10px 20px;
+  }
+  .footer_sambhav_image_div {
+    flex-direction: column;
+  }
+  .footer_creator {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .mail {
+    font-size: 12px;
+  }
+}

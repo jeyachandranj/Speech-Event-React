@@ -1,0 +1,133 @@
+.blur {
+  width: 100vw;
+  height: 100vh;
+  background-color: #80ceff44;
+  position: absolute;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.card {
+  width: 50vw;
+  height: 50vh;
+  background: #19212e;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: absolute;
+  top: 30vh;
+  right: 25vw;
+  z-index: 11;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.close {
+  z-index: 1;
+  cursor: pointer;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.card .text {
+  z-index: 1;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+.card .subtext {
+  z-index: 1;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50vw;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  background: #19212e;
+  inset: 5px;
+  border-radius: 15px;
+}
+/* .card:hover:before {
+	background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+	animation: rotBGimg 3.5s linear infinite;
+} */
+.btn_container {
+  z-index: 1;
+}
+.btn_svg {
+  width: 24px;
+  margin-top: 4px;
+}
+.btn_text {
+  font-size: 24px;
+  margin-left: 12px;
+  margin-bottom: 4px;
+}
+.grababit_link {
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.grabbit_image {
+  width: 200px;
+  z-index: 2;
+  transition: all 0.3s ease-in;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.grabbit_image:hover {
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90vw;
+    height: 40vh;
+    right: 4vw;
+  }
+  .card .text {
+    font-size: 1.3em;
+  }
+  .card .subtext {
+    font-size: 1em;
+  }
+  .grabbit_image {
+    width: 150px;
+  }
+}
