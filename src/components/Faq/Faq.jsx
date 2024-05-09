@@ -2,11 +2,7 @@ import { useState } from "react";
 import classes from "./Faq.module.css";
 
 const questions = [
-  // {
-  //   question: "What is SHPEECH?",
-  //   answer:
-  //     "URJAA 2k24 is the one of biggest Technical event in the history of DYPCOE.",
-  // },
+  
   {
     question: "What are the Dates and Timings of event?",
     answer:

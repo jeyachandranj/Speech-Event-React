@@ -4,6 +4,8 @@ import classes from "./SingleEventPage.module.css";
 import Button from "../common/Button/Button";
 import { useParams } from "react-router-dom";
 import { eventsData } from "../../assets/eventsData";
+import { Link } from "react-router-dom";
+
 import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 
 const SingleEventPage = () => {
@@ -116,7 +118,14 @@ const SingleEventPage = () => {
               </div>
             )} */}
             {link == "" ? (
-              <Button hrefLink={link} label="Register" />
+               <Link
+               to="https://forms.gle/QHAWMfbiXtH8cCJA6"
+             >
+               <Button
+                 link="https://forms.gle/QHAWMfbiXtH8cCJA6"
+                 label="Register Now"
+               ></Button>
+             </Link>
       
             ) : onSpot !== "" ? (
               <p className={classes.soon}>

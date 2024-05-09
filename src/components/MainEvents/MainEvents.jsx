@@ -14,7 +14,7 @@ const MainEvents = () => {
       <div className={classes.events_section}>
         <h1 className={classes.heading}>Event</h1>
         <img src="x" alt="" />
-        <h1 className={classes.sub_heading}>SPEECH</h1>
+        <h1 className={classes.sub_heading}>Speech</h1>
 
         <div className={classes.events_container}>
           

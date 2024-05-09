@@ -12,7 +12,7 @@ const Hero = () => {
     <section id="home" className={classes.hero}>
       <div className={classes.herobox}>
         <div className={classes.headerbox}>
-          <h1 className={classes.heading}>speech</h1>
+          <h1 className={classes.heading}>LEXIAX</h1>
           <p className={classes.date}>May 15, 2024</p>
           {/* Add the countdown timer component here */}
           <CountdownTimer targetDate={targetDate} />
